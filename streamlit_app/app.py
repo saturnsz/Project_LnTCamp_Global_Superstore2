@@ -137,6 +137,17 @@ hr { border-color: #222222 !important; }
 }
 
 [data-testid="stSlider"] [data-testid="stSlider"] { color: #3b82f6 !important; }
+@media (max-width: 768px) {
+    .page-header { padding: 1rem !important; margin-bottom: 1rem !important; }
+    .page-header h1 { font-size: 1.3rem !important; }
+    .card { padding: 1rem !important; }
+    [data-testid="metric-container"] { padding: 0.8rem 1rem !important; }
+    [data-testid="stMetricValue"] { font-size: 1.4rem !important; }
+    .result-card { padding: 1.2rem !important; }
+    .pred-usd { font-size: 2rem !important; }
+    .badge-profit, .badge-loss { font-size: 1rem !important; padding: 0.4rem 1rem !important; }
+    .input-section { padding: 1rem !important; }
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -208,4 +219,5 @@ for col, (val, label) in zip(cols, stats):
         <div style="color:#888888;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;margin-top:0.5rem">{label}</div>
     </div>
     """, unsafe_allow_html=True)
+
 

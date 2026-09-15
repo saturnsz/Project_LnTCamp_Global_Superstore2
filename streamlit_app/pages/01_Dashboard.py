@@ -31,6 +31,17 @@ html, body, [data-testid="stApp"] { font-family:'Inter',sans-serif!important; ba
 .page-header p{color:#888888;margin:0.3rem 0 0;font-size:0.9rem;}
 hr{border-color:#222222!important;}
 ::-webkit-scrollbar{width:5px;height:5px}::-webkit-scrollbar-track{background:#000000}::-webkit-scrollbar-thumb{background:#333333}
+@media (max-width: 768px) {
+    .page-header { padding: 1rem !important; margin-bottom: 1rem !important; }
+    .page-header h1 { font-size: 1.3rem !important; }
+    .card { padding: 1rem !important; }
+    [data-testid="metric-container"] { padding: 0.8rem 1rem !important; }
+    [data-testid="stMetricValue"] { font-size: 1.4rem !important; }
+    .result-card { padding: 1.2rem !important; }
+    .pred-usd { font-size: 2rem !important; }
+    .badge-profit, .badge-loss { font-size: 1rem !important; padding: 0.4rem 1rem !important; }
+    .input-section { padding: 1rem !important; }
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -256,4 +267,5 @@ st.dataframe(
     use_container_width=True,
     height=300,
 )
+
 
