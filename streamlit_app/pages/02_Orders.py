@@ -82,7 +82,7 @@ def color_profit(val):
             return "color: #888888"
     return ""
 
-styled = df.style.applymap(color_profit, subset=["Profit (USD)"])
+styled = df.style.map(color_profit, subset=["Profit (USD)"])
 
 st.dataframe(styled, use_container_width=True, hide_index=True, height=480)
 
